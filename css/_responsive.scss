@@ -1,0 +1,153 @@
+@media (max-width: 767.98px) { 
+    .login-form-wrap{
+        .row.no-padding{
+            .login-col{
+                padding:0 15px;
+            }
+        }
+        .login-page-content{
+            .login-heading{
+                h4{
+                    padding:0 20px;
+                }
+            }
+        }
+        .login-page-infographic{
+            img{
+                max-width: 90%;
+                margin:20px auto;
+            }
+            .info-content{
+                padding:20px 0;
+            }
+        }
+    }
+
+    .login-footer{
+        .col-md-6{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .language-dropdown{
+                margin:15px 0 0 0;
+            }
+        }
+    }
+    
+
+    .dashboard-wrap{
+        padding:0;
+        .dashboard-sidebar{
+            position: fixed;
+            z-index:999;
+            top:0;
+            left:0;
+            bottom:0;
+            background:$white;
+            max-width:250px;     
+            display: none;
+            &.active{
+                display: block;
+            }       
+        }
+        .dashboard-navigation-bg{
+            background:rgba($black, 0.3);
+            position: fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            z-index:998;
+            &.active{
+                display: block;
+            }
+        }
+        .dashboard-content-wrap{
+            padding:15px;
+            .page-header{
+                margin:0 0 15px 0;
+                .row{
+                    flex-direction: column-reverse;
+                    h1{
+                        margin-top:10px;
+                    }
+                }
+                .user-dropdown{
+                    min-width: auto;
+                    .dropdown-toggle{
+                        max-width: 46px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .btn-content{
+                            .material-icons{
+                                margin:0;
+                            }
+                        }
+                        .user-name{
+                            display: none;
+                        }
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+                .logged-in-user{
+                    justify-content: space-between !important;
+                }
+                .logged-in-user{
+                    .mobile-logo{
+                        display: block;
+                        .open-mobile-menu{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .dashboard-stats{
+                .col-md-3{
+                    margin:0 0 15px 0;
+                }
+            }
+            .group-search-wrap{
+                .col-md-6{
+                    .justify-content-end{
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        margin:20px 0 0 0;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .modal-body{
+        .custom-control{
+            &.custom-switch{
+                margin-top:0 !important;
+            }
+        }
+    }
+
+    .chips-wrapper{
+        .chip{
+            margin:3px 0;
+        }
+    }
+
+    .table{
+        tr{
+            td{
+                .chips{
+                    .badge{
+                        margin-bottom:5px;
+                    }
+                }
+            }
+        }
+    }
+
+}

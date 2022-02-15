@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPM</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+    <div class="login-form-wrap">
+        <div class="container-fluid">
+            
+            <div class="row no-padding">
+                <div class="col-md-6 login-col d-flex align-items-center justify-content-center">
+
+                    <div class="login-page-content">
+
+                        <header class="login-header">
+                        
+                            <div class="login-logo text-center">
+                                <img src="images/Logo.svg" alt="RPM">
+                            </div>
+
+                            <div class="login-heading text-center">
+                                <h2>Welcome to <br> Roll and Permission Management</h2>
+                                <h4>Login to access your products</h4>
+                            </div>
+
+                        </header>
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-7">
+
+                                <div class="login-box">
+
+                                    <form action="dashboard.html" class="needs-validation">
+
+                                        <div class="form-group">
+                                            <label class="main-label" for="company_name">Company</label>
+                                            <select name="company_name" id="company_name" class="custom-select" required>
+                                                <option value="">Company ID</option>
+                                                <option value="RPM001">RPM001</option>
+                                                <option value="RPM002">RPM002</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="main-label" for="user_id">User ID</label>
+                                            <input type="text" class="form-control is-invalid" id="user_id" placeholder="Enter User ID" required>
+                                            <div class="invalid-feedback">Please provide your user id</div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="main-label" for="password">Password</label>
+                                            <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                                        </div>
+
+                                        <div class="custom-control custom-checkbox mb-4">
+                                            <input type="checkbox" class="custom-control-input" id="rememberMe">
+                                            <label class="custom-control-label" for="rememberMe">Remember me</label>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-block btn-icon btn-blue btn-md btn-radius">
+                                            <span class="material-icons icon">login</span>
+                                            LOGIN
+                                        </button>
+
+                                    </form>
+
+                                    <div class="text-center mt-2 forgot-password">
+                                        <a href="forgot-password.html">Forgot Password?</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <footer class="login-footer mt-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    &copy; RPM All Rights Reserved
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-end">
+                                    <div class="language-dropdown">
+                                        
+                                        <span class="material-icons">language</span>
+
+                                        <select name="company_name" id="company_name" class="custom-select">
+                                            <option value="en">English</option>
+                                            <option value="fr">French</option>
+                                            <option value="sp">Spanish</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 login-col">
+                    
+                    <div class="login-page-infographic d-flex align-items-center justify-content-center">
+                        <div class="pattern-1"></div>
+                        <div class="info-content-wrap">
+                            <img src="images/login-graphic.png" alt="login">
+                            <div class="info-content">
+                                Access control with seprate responsibilities in a system where multiple roles are fulfilled
+                            </div>
+                        </div>
+                        <div class="pattern-2"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div><!-- .container-fluid ends here -->
+    </div><!-- .login-form-wrap ends here -->
+    
+</body>
+</html>
